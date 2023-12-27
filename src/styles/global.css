@@ -1,3 +1,49 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  /* colors */
+  --color-brand-cornsilk: #fefae0;
+  --color-brand-earth-yellow: #dda15e;
+  --color-brand-green-100: #283618;
+  --color-brand-green-200: #121a11;
+  --color-brand-green-50: #606c38;
+  --color-brand-tigers-eye: #bc6c25;
+  --color-neutral-black: #000000;
+  --color-neutral-grey-100: #2c2c2c;
+  --color-neutral-grey-50: #f5f5f5;
+  --color-neutral-white: #ffffff;
+}
+
+@font-face {
+  font-family: "GarantRegular";
+  src: url("/fonts/GarantRegular.ttf"), format("ttf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "GarantLight";
+  src: url("/fonts/GarantLight.otf"), format("otf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+    font-family: "GarantMedium";
+    src: url("/fonts/GarantMedium.otf"), format("otf");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "KantataAksara";
+    src: url("/fonts/KantataAksara.otf"), format("otf");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
