@@ -1,0 +1,20 @@
+---
+import { Image } from "astro:assets";
+
+const { imgSrc, imgAlt, title } = Astro.props;
+---
+
+<div
+  class="w-full  h-[233px]  rounded-2xl shadow-[8px_10px_10px_rgba(0,0,0,0.5)] flex flex-col justify-center items-center relative cursor-pointer"
+>
+  <Image
+    class="w-full h-full object-cover rounded-2xl brightness-[.6]"
+    src={imgSrc}
+    alt={imgAlt}
+  />
+  <h3
+    class="absolute text-text-primary uppercase font-kantata text-4xl drop-shadow-[8px_10px_10px_rgba(0,0,0,0.5)]"
+  >
+    {title}
+  </h3>
+</div>

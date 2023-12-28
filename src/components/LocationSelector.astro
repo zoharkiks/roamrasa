@@ -1,0 +1,32 @@
+---
+import { Image } from "astro:assets";
+import logo from "../assets/rr_text.png";
+import palampur from "../assets/palampur-vector.jpg";
+import LocationCard from "./LocationCard.astro";
+---
+
+<div class="flex flex-col h-full">
+  <div class="w-full flex justify-center ">
+    <Image class="w-48 object-contain" src={logo} alt="logo" />
+  </div>
+  <h1
+    class="text-text-primary font-garant-regular text-3xl mt-20 leading-normal"
+  >
+    Choose Your <br />
+    <span class="text-text-brand">Adventure</span>
+  </h1>
+  <div class="grid my-12 gap-10 md:grid-cols-2">
+    <LocationCard
+    imgSrc={palampur}
+    imgAlt="Picture of Palampur"
+    title="Palampur"
+    link="/palampur"
+    />
+    <LocationCard
+    imgSrc={palampur}
+    imgAlt="Picture of Palampur"
+    title="Palampur"
+    />
+    
+  </div>
+</div>

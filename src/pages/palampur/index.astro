@@ -1,0 +1,36 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { Image } from "astro:assets";
+import logo from "../../assets/rr_text.png";
+import cafe from "../../assets/cafes.jpeg";
+import POICard from "../../components/POICard.astro";
+---
+
+<Layout title="Palampur">
+  <div
+    class="bg-surface-secondary min-h-dvh text-white px-5 py-10 font-garant-light flex flex-col justify-between"
+  >
+    <div class="flex justify-center items-center">
+      <a href="/">
+        <Image class="w-28 object-contain" src={logo} alt="logo" />
+      </a>
+    </div>
+    <div class="mt-8">
+      <h3 class="text-2xl">explore</h3>
+      <h2 class="font-kantata text-4xl mt-2">Palampur</h2>
+      <p class="mt-8">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem reiciendis
+        facilis ad corrupti illo consequuntur quidem quo sunt modi vero
+        asperiores fugit, quam dignissimos nulla blanditiis ratione dolor, eos
+        atque? quidem quo sunt modi vero asperiores fugit, quam dignissimos
+        nulla blanditiis ratione dolor, eos atque?
+      </p>
+    </div>
+    <POICard imgSrc={cafe} imgAlt="Picture of Palampur" title="Cafes" />
+
+    <div class="flex justify-between items-center">
+      <p class="text-text-brand italic">Palampur Is Just Awesome</p>
+      <span>Icon</span>
+    </div>
+  </div>
+</Layout>
