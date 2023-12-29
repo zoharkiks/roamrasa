@@ -2,22 +2,25 @@
 import Loader from "../components/Loader.astro";
 import LocationSelector from "../components/LocationSelector.astro";
 import Layout from "../layouts/Layout.astro";
+
 ---
 
 <Layout title="RoamRasa">
-  <main class="p-3">
-    <div class="bg-surface-secondary rounded-lg min-h-screen relative">
+  <main class="p-3 padding_animation ">
+    <div class="bg-surface-secondary rounded-lg min-h-screen relative bg_animation">
 
 
-      <!-- <div class="h-full bg-red">
+      <div class="absolute inset-0   ">
         <Loader />
-      </div> -->
+      </div>
 
       <!-- <div class=" h-full px-5 py-9 ">
       <LocationSelector/>
-    </div> -->
+    </div>  -->
 
       <span class="text-white absolute bottom-4 right-4">Icon</span>
+
     </div>
   </main>
 </Layout>
+<script src="../js/index.js"></script>

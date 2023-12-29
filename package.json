@@ -3,7 +3,7 @@
   "type": "module",
   "version": "0.0.1",
   "scripts": {
-    "dev": "astro dev",
+    "dev": "astro dev --host",
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
@@ -11,8 +11,14 @@
   },
   "dependencies": {
     "@astrojs/tailwind": "^5.1.0",
+    "@barba/core": "^2.9.7",
     "astro": "^3.6.4",
     "class-variance-authority": "^0.7.0",
+    "gsap": "^3.12.4",
     "tailwindcss": "^3.4.0"
+  },
+  "devDependencies": {
+    "@iconify/json": "^2.2.163",
+    "unplugin-icons": "^0.18.1"
   }
 }
