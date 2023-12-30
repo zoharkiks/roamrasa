@@ -2,6 +2,8 @@ import { gsap } from "gsap";
 
 initScript();
 
+
+
 // Loader Animations
 function initLoader() {
   var tl = gsap.timeline();
@@ -28,8 +30,37 @@ function initLoader() {
     { opacity: 0 },
     { opacity: 1, duration: 1 }
   );
+  tl.fromTo(
+    ".speakerIcon_animation",
+    { opacity: 0 },
+    { opacity: 1, duration: 0.5 }
+  );
+}
+
+// TODO Autoplay Audio On Page Load
+// Toggle Audio Function
+export function toggleAudio() {
+  const playButton = document.querySelector("#playButton");
+  playButton.addEventListener("click", () => {
+    var audio = document.getElementById("forest_audio");
+    const duration = 0.5; // Duration for fade effect in seconds
+
+    if (audio.paused) {
+      gsap.to(audio, { volume: 1, duration }); // Fade in effect
+      audio.play();
+    } else {
+      gsap.to(audio, {
+        volume: 0,
+        duration,
+        onComplete: () => {
+          audio.pause();
+        },
+      });
+    }
+  });
 }
 
 function initScript() {
   initLoader();
+  toggleAudio();
 }

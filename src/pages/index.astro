@@ -2,15 +2,14 @@
 import Loader from "../components/Loader.astro";
 import LocationSelector from "../components/LocationSelector.astro";
 import Layout from "../layouts/Layout.astro";
-
 ---
 
 <Layout title="RoamRasa">
-  <main class="p-3 padding_animation ">
-    <div class="bg-surface-secondary rounded-lg min-h-screen relative bg_animation">
-
-
-      <div class="absolute inset-0   ">
+  <main class="p-3 padding_animation">
+    <div
+      class="bg-surface-secondary rounded-lg min-h-screen relative bg_animation"
+    >
+      <div class="absolute inset-0">
         <Loader />
       </div>
 
@@ -18,8 +17,11 @@ import Layout from "../layouts/Layout.astro";
       <LocationSelector/>
     </div>  -->
 
-      <span class="text-white absolute bottom-4 right-4">Icon</span>
-
+      <iconify-icon
+      id="playButton"
+      width="28"
+        class="text-white absolute bottom-4 right-4 cursor-pointer speakerIcon_animation "
+        icon="lets-icons:sound-max"></iconify-icon>
     </div>
   </main>
 </Layout>
